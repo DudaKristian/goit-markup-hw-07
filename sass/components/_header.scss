@@ -1,0 +1,107 @@
+header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+/* Logo */
+.nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.logo-header {
+  color: var(--logo-secondary-color);
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-right: 93px;
+}
+.logo-web {
+  color: var(--accent-color);
+  font-family: 'raleway', sans-serif;
+}
+.navigation {
+  display: flex;
+}
+.navigation :last-child,
+.contacts :last-child {
+  margin-right: 0;
+}
+
+.navigation a {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation :focus,
+.navigation :hover,
+.contacts :hover,
+.contacts :focus,
+.contacts :hover use,
+.contacts :focus use {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.position {
+  position: relative;
+}
+a.current::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 48px;
+}
+.navigation a.current {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.navigation > li,
+.contacts > li {
+  padding: 0;
+  margin-right: 50px;
+}
+.navigation > li > a,
+.contacts > li > a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts a {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts svg use {
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+.icon-header {
+  width: 16px;
+  height: 12px;
+  fill: var(--text-color);
+  margin-right: 10px;
+}
