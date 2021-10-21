@@ -1,36 +1,38 @@
-.teammember-name {
+.team {
+  background-color: var(--background-color);
+}
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  text-align: center;
+}
+.teammember {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.teammember__name {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 0;
 }
-.teammember-job {
+.teammember__job {
   margin-bottom: 0;
 }
-.team {
-  background-color: var(--background-color);
-}
-.title.team {
+
+.team__title {
   padding-top: 94px;
 }
-.team-list {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0;
-  text-align: center;
-}
-.team-list-member {
-  background-color: #fff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.link-list {
+
+.link__list {
   display: flex;
   justify-content: center;
 }
-.link-list-item {
+.link__item {
   display: block;
   border-radius: 50%;
   height: 44px;
@@ -38,17 +40,16 @@
   margin-top: 16px;
   margin-bottom: 30px;
   fill: var(--logo-color);
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(background-color, fill);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: #fff;
+    cursor: pointer;
+  }
 }
 
-.team-icon {
+.team__icon {
   margin-top: 12px;
-}
-.link-list-item:hover,
-.link-list-item:focus {
-  background-color: var(--accent-color);
-  fill: #fff;
-  cursor: pointer;
 }

@@ -10,10 +10,10 @@
   height: 100%;
   background-color: var(--accent-color);
   transform: translateY(100%);
-  transition: transform 250ms ease;
+  @include transition-solo(transform);
   z-index: 0;
 }
-.overlay-text {
+.overlay__text {
   margin: 0;
   font-size: 18px;
   line-height: 1.56;

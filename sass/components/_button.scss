@@ -1,0 +1,39 @@
+.button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  width: 200px;
+  height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: 12px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  fill: var(--accent-white);
+  color: var(--accent-white);
+  background-color: var(--accent-color);
+  border: transparent;
+
+  cursor: pointer;
+  @include transition-solo(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+
+.button__align {
+  margin-left: auto;
+  margin-right: auto;
+}
