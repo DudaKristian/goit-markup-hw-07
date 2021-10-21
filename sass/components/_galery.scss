@@ -1,13 +1,9 @@
-.portfolio {
-  margin-bottom: -30px;
-  margin-right: -30px;
-}
 .portfolio__list {
   margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-basis: calc((1200px - 30px) / 3);
+  flex-basis: calc(1200px / 3 - 60px);
   & > li > p {
     margin-bottom: 0;
   }
@@ -30,8 +26,8 @@
   background: #ffffff;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
-  min-width: 370px;
-
+  max-width: 370px;
+  flex-basis: calc((1200px - 60px) / 3);
   @include transition-solo(box-shadow);
 
   &:hover {
@@ -41,6 +37,11 @@
   }
   &:hover .overlay {
     transform: translateY(0%);
+  }
+  &:nth-child(7),
+  &:nth-child(8),
+  &:nth-child(9) {
+    margin-bottom: 0;
   }
 }
 
