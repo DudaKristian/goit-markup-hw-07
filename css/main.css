@@ -194,7 +194,7 @@ a.navigation__current::after {
 }
 
 .navigation > li,
-.contacts > li {
+.contacts > li:not(:last-child) {
   padding: 0;
   margin-right: 50px;
 }
@@ -241,7 +241,7 @@ a.navigation__current::after {
   margin-right: -3px;
 }
 
-.contacts__item + .contacts__item {
+.contacts__item:last-child {
   margin-right: 0;
 }
 
@@ -686,7 +686,7 @@ input[type='checkbox']:checked + label > .custom-checkbox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((1200px - 30px) / 3);
 }
 
 .portfolio__list > li > p {

@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((1200px - 30px) / 3);
   & > li > p {
     margin-bottom: 0;
   }

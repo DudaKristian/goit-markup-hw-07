@@ -50,7 +50,7 @@ a.navigation__current::after {
 }
 
 .navigation > li,
-.contacts > li {
+.contacts > li:not(:last-child) {
   padding: 0;
   margin-right: 50px;
 }
@@ -89,7 +89,7 @@ a.navigation__current::after {
 .contacts__item svg {
   margin-right: -3px;
 }
-.contacts__item + .contacts__item {
+.contacts__item:last-child {
   margin-right: 0;
 }
 .contacts__icon {
