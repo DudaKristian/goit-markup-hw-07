@@ -28,11 +28,11 @@ header {
     color: var(--accent-color);
   }
 }
-
 .navigation__position {
   position: relative;
 }
-a.current::after {
+
+a.navigation__current::after {
   content: '';
   display: block;
   height: 4px;
@@ -44,7 +44,7 @@ a.current::after {
   transform: translate(-50%);
   top: 49px;
 }
-.navigation a.current {
+.navigation a.navigation__current {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -59,6 +59,7 @@ a.current::after {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .contacts {
   display: flex;
   margin-top: 0;
